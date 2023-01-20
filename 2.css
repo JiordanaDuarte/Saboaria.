@@ -1,0 +1,376 @@
+body {
+    background-color: #fafafa;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+body.dark {
+    background: black;
+    color: whitesmoke;
+}
+
+header {
+    margin: 0 ;
+    padding: 5px;
+}
+
+.diaNoite {
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+
+    margin: 0;
+    transition: background;
+    width: 1300px;
+
+} 
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+        top: 10px;
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 4px;
+  position: relative;
+  height: 26px;
+  width: 44px;
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #111;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 25px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(26px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+#menus {  
+  position: fixed;
+  
+}
+
+.produtos {
+    margin: 15px 500px 0 15px ;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu {
+    background-color: #fafafa;
+    position: fixed;
+    top: 6%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+    background: whitesmoke;
+    height: 30px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.botao { 
+    background-color: lightgrey;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin: 0 auto;
+    padding: 10px 0 40px 50px;;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.botao2, .botao3 {
+    margin: -1px 5px 0 10px;
+}
+
+.botao1 {
+     margin: -1px 10px 0 200px;
+}
+
+input[type="submit"]{
+    padding: 15px 30px;
+    font-size: 15px;
+    border-color: snow;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover{
+    background: white;
+    color: lightgrey;
+}
+
+.search-text {
+    background:none;
+    border: 0;
+    outline: 0;
+
+    font-size: 16px;
+}
+
+. search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: #fff;
+    height: 50px;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.lupinha {
+    width: 40px ;
+    height: 40px;
+
+}
+
+.slider {
+    margin: 80px auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 1355px;
+    margin-top: -120px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+.nota {
+    background: grey;
+    border-radius: 15px;
+    margin: 0 0 80px 330px;
+    padding: 15px;
+    width: 50%;
+    color: black;
+}
+
+.aromaPng {
+    display: flex;
+    justify-content: center;
+}
+
+.natural {
+    border-radius: 5px;
+    display: flex;
+    margin: 20px 0 0 320px;
+    padding: 15px;
+    width: 50%;
+}
+
+.natural p {
+    padding: 15px;
+    width: 50%;
+}
+
+.natural img {
+    border-radius: 5%;
+    margin: 0 auto;
+}
+
+.natural2 {
+    border-radius: 5px;
+    display: flex;
+    margin: 100px 0 0 330px;
+    padding: 15px;
+    width: 50%;
+}
+
+.natural2 p {
+    padding: 15px;
+    width: 50%;
+}
+
+.natural2 img {
+    border-radius: 5%;
+    margin: 0 auto;
+}
+
+.local {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.mapa {
+    margin: 20px 0 0 280px;
+    width: 60%;
+    height: 280px;
+}
+
+.list {
+    display:flex;
+    justify-content: center; 
+}
+
+/*footer*/
+
+footer {
+    margin: 50px auto;
+    padding: 0 auto;
+    background: grey;
+    width: 100%;
+    color: black;
+
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+
+    
+}
+.navegacao ul {
+    margin: 10px;
+}
+
+.navegacao li{
+    list-style: none;
+}
+
+.navegacao strong {
+    padding: 5px;
+}
+
+
+#menu.ativo {
+  background-color: black;
+  padding: .5rem 1rem;
+}
