@@ -196,6 +196,21 @@ input[type="submit"]:hover{
     width: 800px;
 }
 
+.abc {
+    display: flex;
+    align-items: center;
+    margin: 15%;
+
+}
+
+.abc img {
+    width: 50px;
+}
+
+.p1 {
+    margin: 0 20px 0 0;
+}
+
 .manual-navigation {
     position: absolute;
     width: 1355px;
