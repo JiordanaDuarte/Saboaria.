@@ -337,6 +337,20 @@ input[type="submit"]:hover{
     margin: 0 auto;
 }
 
+.model {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.model img {
+    padding: 40px 40px 40px 40px;
+    border-radius: 50%;
+    
+}
+
 .local {
     display: flex;
     justify-content: center;
