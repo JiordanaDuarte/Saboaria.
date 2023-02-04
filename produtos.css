@@ -19,6 +19,7 @@ header {
     padding: 5px;
 }
 
+
 .diaNoite {
     position: fixed;
     display: flex;
@@ -29,7 +30,8 @@ header {
     transition: background;
     width: 1300px;
 
-}
+} 
+
 
 .checkbox {
   opacity: 0;
@@ -37,7 +39,6 @@ header {
 }
 
 .label {
-        top: 10px;
   background-color: #111;
   border-radius: 50px;
   cursor: pointer;
@@ -76,9 +77,8 @@ header {
   color: #f39c12;
 }
 
-
 #menus {  
-
+    margin: 0;
   position: fixed;
   
 }
@@ -91,7 +91,7 @@ header {
 }
 
 .menu {
-    background-color: #fafafa;
+   background-color: #fafafa;
     position: fixed;
     top: 6%;
     left: 30%;
@@ -140,11 +140,11 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     background: white;
-    color: purple;
+    color: lightgrey;
 }
 
 .search-text {
-    background: none;
+    background:none;
     border: 0;
     outline: 0;
 
@@ -171,6 +171,12 @@ input[type="submit"]:hover{
 
 }
 
+.bt-volt {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
 .prod {
     width: 940px;
     margin: 15%;
@@ -182,11 +188,12 @@ input[type="submit"]:hover{
     text-align: center;
     width: 30%;
     vertical-align: top;
-    margin: 5px 1.5%;
+    margin: 10px 1.5%;
     padding: 30px 25px;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 10px;
+    border-top-width: 20px;
 }
 
 .prod a {
@@ -216,3 +223,38 @@ input[type="submit"]:hover{
 .prod-desc {
     font-size: 18px;
  }
+
+.prod-prec {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+/*footer*/
+
+footer {
+    margin: 50px auto;
+    padding: 0 auto;
+    background: grey;
+    width: 100%;
+    color: black;
+
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+
+    
+}
+.navegacao ul {
+    margin: 10px;
+}
+
+.navegacao li{
+    list-style: none;
+}
+
+.navegacao strong {
+    padding: 5px;
+}
