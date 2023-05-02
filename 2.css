@@ -129,7 +129,7 @@ header {
 }
 
 .botao { 
-    background-color: lightgrey;
+    background-color: darkcyan;
     top: 0;
     right: 0;
     position: fixed;
@@ -143,25 +143,26 @@ header {
     z-index: 1;
 }
 
-.botao2, .botao3 {
-    margin: -1px 5px 0 10px;
+.bt {
+     margin: -1px 10px 0 200px;
 }
 
-.botao1 {
-     margin: -1px 10px 0 200px;
+.botao1, .botao2, .botao3 {
+    background: transparent;
+    margin: -1px 5px 0 10px;
 }
 
 input[type="submit"]{
     padding: 10px 20px;
     font-size: 15px;
-    border-color: snow;
-    border-radius: 50px;
+    border-color: transparent;
     cursor: pointer;
     transition: 0.5s;
 }
 
 input[type="submit"]:hover{
     background: white;
+    border-radius: 0 50px 0 50px;
     color: lightgrey;
 }
 
